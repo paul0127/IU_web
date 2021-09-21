@@ -1,0 +1,76 @@
+@import url(./common.css);
+
+.about_page {
+  max-width: 1075px;
+}
+.about_page .top {
+  border-bottom: 1px solid #8d8d8d;
+}
+.about_page .top .title {
+  color: #8d8d8d;
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  letter-spacing: 5px;
+  font-family: Minion;
+}
+.about_page .top .desc {
+  font-size: 1.25rem;
+  line-height: 2;
+  font-weight: 400;
+  margin-bottom: 60px;
+  text-align: justify;
+}
+.about_page .top .kind {
+  color: #a9a6a6;
+  line-height: 2;
+  margin-bottom: 60px;
+}
+.about_page .top .kind .kind_name {
+  letter-spacing: 3px;
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+.about_page .top .kind .kind_ename {
+  font-size: 1.02rem;
+}
+.about_page .bottom {
+  padding-top: 60px;
+}
+.about_page .bottom .title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 35px;
+  letter-spacing: 5px;
+  font-family: Minion;
+}
+.about_page .bottom .info {
+  display: block;
+  margin-bottom: 60px;
+}
+.about_page .bottom .info .item {
+  display: flex;
+  align-items: center;
+  font-size: 1.25rem;
+  margin-bottom: 30px;
+  color: #333;
+  font-weight: 400;
+}
+.about_page .bottom .info .item:last-child {
+  margin-bottom: 0;
+}
+.about_page .bottom .info .item i {
+  color: #8d8d8d;
+  flex: 0 0 30px;
+  font-size: 1.75rem;
+  margin-right: 30px;
+}
+.about_page .bottom a.desc {
+  color: #333;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: 500;
+}
+.about_page .bottom a.desc:hover {
+  opacity: 0.8;
+}

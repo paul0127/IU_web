@@ -1,0 +1,59 @@
+@import url(./common.css);
+
+.contact_page .form {
+  max-width: 425px;
+  margin: 0 auto;
+  margin-bottom: 90px;
+}
+.contact_page .form .logo {
+  text-align: center;
+  margin-bottom: 75px;
+}
+.contact_page .form .item {
+  margin-bottom: 40px;
+}
+.contact_page .form .item .name {
+  color: #8d8d8d;
+  margin-bottom: 5px;
+  font-size: 1.25rem;
+}
+.contact_page .form .item input[type='text'] {
+  width: 100%;
+  border: 1px solid #bbb;
+  padding: 10px;
+  outline: none;
+  font-size: 1.25rem;
+}
+.contact_page .form .item textarea {
+  width: 100%;
+  border: 1px solid #bbb;
+  padding: 10px;
+  outline: none;
+  font-size: 1.25rem;
+  height: 200px;
+}
+.contact_page .form .item input[type='text']:focus,
+.contact_page .form .item textarea:focus {
+  border-color: #000;
+}
+.contact_page .form button {
+  outline: none;
+  background: none;
+  border: none;
+  color: #333;
+  font-weight: 500;
+}
+.contact_page .form button:hover {
+  opacity: 0.8;
+}
+.contact_page .bottom {
+  text-align: center;
+  font-size: 1.15rem;
+  font-weight: 400;
+}
+.contact_page .bottom .desc {
+  margin-bottom: 20px;
+  font-size: 1.4rem;
+  font-family: Minion;
+  font-weight: 600;
+}
