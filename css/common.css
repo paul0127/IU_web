@@ -68,21 +68,47 @@ header ul.nav {
   background-color: #82cbc4;
   display: flex;
   justify-content: center;
-  padding: 20px 0;
   font-size: 2rem;
 }
-header ul.nav li {
+header ul.nav > li {
   margin-right: 30px;
+  position: relative;
+  padding: 20px 0;
 }
-header ul.nav li:last-child {
+header ul.nav > li:last-child {
   margin-right: 0;
 }
-header ul.nav li a {
+header ul.nav > li a {
   color: #fff;
   text-decoration: none;
 }
-header ul.nav li a:hover {
+header ul.nav > li a:hover {
   opacity: 0.8;
+}
+header ul.nav > li > ul.sub_menu {
+  position: absolute;
+  top: 100%;
+  left: -20px;
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+  background-color: #82cbc4;
+  font-size: 1.5rem;
+  padding: 10px 5px;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition-duration: 0.3s;
+  width: calc(100% + 40px);
+  text-align: center;
+}
+header ul.nav > li:hover > ul.sub_menu {
+  transform: scaleY(1);
+}
+header ul.nav > li > ul.sub_menu > li {
+  margin-bottom: 10px;
+}
+header ul.nav > li > ul.sub_menu > li:last-child {
+  margin-bottom: 0;
 }
 
 footer {
@@ -99,11 +125,11 @@ footer .foot_left {
   flex-direction: column;
   align-items: center;
 }
-footer .foot_left .foot_logo{
+footer .foot_left .foot_logo {
   width: 150px;
   margin-bottom: 20px;
 }
-footer .foot_left .copyright{
+footer .foot_left .copyright {
   margin-bottom: 20px;
 }
 footer .foot_left ul.social {
@@ -122,9 +148,9 @@ footer .foot_left ul.social li:last-child {
 footer .foot_left ul.social li a {
   color: #fff;
 }
+footer .foot_left ul.social li a:hover {
+  opacity: 0.8;
+}
 
 @media (max-width: 900px) {
-  footer {
-    display: block;
-  }
 }

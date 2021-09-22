@@ -35,6 +35,9 @@
 .index_adv .column {
   display: flex;
 }
+.index_adv .column a:hover {
+  opacity: 0.8;
+}
 /* 一個 */
 .index_adv .column.one a {
   flex: 1;
