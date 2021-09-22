@@ -35,11 +35,22 @@
 .index_adv .column {
   display: flex;
 }
+/* 一個 */
+.index_adv .column.one a {
+  flex: 1;
+}
+.index_adv .column.one a img {
+  width: 100%;
+}
 /* 兩個 */
 .index_adv .column.two a {
   margin-right: 10px;
 }
+.index_adv .column.two a:first-child {
+  flex: 2;
+}
 .index_adv .column.two a:last-child {
+  flex: 1;
   margin-right: 0;
 }
 /* 三個 */
@@ -202,6 +213,7 @@
   display: flex;
   flex-wrap: wrap;
   margin: 0 -45px -60px -45px;
+  padding-top: 20px;
 }
 .index_brand .list .item {
   flex: 0 0 25%;
