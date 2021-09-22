@@ -12,6 +12,9 @@ body.fixed {
 img {
   max-width: 100%;
 }
+.container.custom{
+  max-width: 1260px;
+}
 
 header {
   border-top: 60px solid #82cbc4;
