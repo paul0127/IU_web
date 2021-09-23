@@ -73,6 +73,21 @@
   flex-direction: column;
   justify-content: space-between;
 }
+/* 四個 */
+.index_adv .column.four > span {
+  flex: 2;
+  margin-right: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.index_adv .column.four > span:last-child {
+  margin-right: 0;
+}
+.index_adv .column.four > span >a{
+  margin-bottom: 30px;
+}
 /* 五個 */
 .index_adv .column.five a {
   cursor: pointer;
@@ -228,4 +243,28 @@
 }
 .index_brand .list .item .image:hover {
   opacity: 0.8;
+}
+
+/* 首頁icon */
+.index_icon {
+  display: flex;
+  padding-bottom: 45px;
+}
+.index_icon .item {
+  flex: 0 0 33.33%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.index_icon .item .icon {
+  background-color: #82cbc4;
+  width: 107px;
+  height: 107px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3.5rem;
+  border-radius: 100%;
+  color: #fff;
+  margin-bottom: 45px;
 }
