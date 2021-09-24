@@ -44,6 +44,7 @@ header .nav_top ul.toolbar {
   border-left: 1px dotted #333;
   padding-left: 20px;
   margin-bottom: 0;
+  z-index: 3;
 }
 header .nav_top ul.toolbar li {
   margin-right: 20px;
@@ -84,6 +85,7 @@ header .nav_top ul.toolbar li .dropDown {
   padding: 10px 20px;
   background-color: #fff;
   display: none;
+  z-index: 4;
 }
 header .nav_top ul.toolbar li.active .dropDown {
   display: block;
@@ -110,6 +112,44 @@ header .nav_top ul.toolbar li .dropDown form button {
   padding: 5px 15px;
   border-radius: 5px;
 }
+header .nav_top ul.toolbar li .dropDown .cart_info {
+  display: block;
+}
+header .nav_top ul.toolbar li .dropDown .cart_info .list {
+  display: block;
+  margin-bottom: 20px;
+}
+header .nav_top ul.toolbar li .dropDown .cart_info .list .item {
+  display: flex;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #333;
+}
+header .nav_top ul.toolbar li .dropDown .cart_info .list .item:last-child {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  border: none;
+}
+header .nav_top ul.toolbar li .dropDown .cart_info .list .item .image {
+  flex: 0 0 50px;
+  margin-right: 10px;
+}
+header .nav_top ul.toolbar li .dropDown .cart_info .list .item .text {
+  font-size: 1rem;
+}
+header .nav_top ul.toolbar li .dropDown .cart_info .list .item .text .name{
+  margin-bottom: 10px;
+}
+header .nav_top ul.toolbar li .dropDown .cart_info .to_cart{
+  font-size: 1rem;
+  background-color: #82cbc4;
+  text-align: center;
+  display: block;
+  color: #fff;
+  padding: 10px 0;
+  border-radius: 20px;
+}
+
 header ul.nav {
   background-color: #82cbc4;
   display: flex;
@@ -146,6 +186,7 @@ header ul.nav > li > ul.sub_menu {
   transition-duration: 0.3s;
   width: calc(100% + 40px);
   text-align: center;
+  z-index: 2;
 }
 header ul.nav > li:hover > ul.sub_menu {
   transform: scaleY(1);
@@ -220,6 +261,9 @@ header ul.nav > li > ul.sub_menu > li:last-child {
   }
   header .nav_top .logo {
     width: 50px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
   }
   header .nav_top ul.toolbar {
     position: unset;
@@ -247,8 +291,8 @@ header ul.nav > li > ul.sub_menu > li:last-child {
     padding-left: 2px;
   }
   header .nav_top ul.toolbar li.active .dropDown {
-    width: calc(100vw - 5px);
-    top: calc(100% + 20px);
+    width: calc(100vw - 10px);
+    top: calc(100% + 15px);
     right: -15px;
   }
 
