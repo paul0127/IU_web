@@ -6,6 +6,8 @@ let sub_menu_btn = document.querySelectorAll('header ul.nav li.sub > a')
 menu_btn.addEventListener('click', () => {
   menu.classList.toggle('active')
   search_btn.parentNode.classList.remove('active')
+  cart_btn.parentNode.classList.remove('active')
+  member_btn.parentNode.classList.remove('active')
 })
 
 sub_menu_btn.forEach((item) => {
@@ -24,13 +26,21 @@ let member_btn = document.querySelector('header .nav_top .member_bar a')
 
 member_btn.addEventListener('click', () => {
   member_btn.parentNode.classList.toggle('active')
+  cart_btn.parentNode.classList.remove('active')
+  search_btn.parentNode.classList.remove('active')
+  menu.classList.remove('active')
 })
 
 cart_btn.addEventListener('click', () => {
   cart_btn.parentNode.classList.toggle('active')
+  search_btn.parentNode.classList.remove('active')
+  member_btn.parentNode.classList.remove('active')
+  menu.classList.remove('active')
 })
 
 search_btn.addEventListener('click', () => {
   search_btn.parentNode.classList.toggle('active')
+  cart_btn.parentNode.classList.remove('active')
+  member_btn.parentNode.classList.remove('active')
   menu.classList.remove('active')
 })

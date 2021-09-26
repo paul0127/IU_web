@@ -149,6 +149,36 @@ header .nav_top ul.toolbar li .dropDown .cart_info .to_cart {
   padding: 10px 0;
   border-radius: 20px;
 }
+header .nav_top ul.toolbar li .dropDown .login_info {
+  display: block;
+}
+header .nav_top ul.toolbar li .dropDown .login_info a {
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #abb4bb;
+  font-size: 1.25rem;
+  text-align: center;
+  display: block;
+  margin-bottom: 10px;
+  padding: 5px 0;
+  color: #fff;
+}
+header .nav_top ul.toolbar li .dropDown .login_info a:first-child {
+  background-color: #abb4bb;
+}
+header .nav_top ul.toolbar li .dropDown .login_info a:first-child:hover {
+  background-color: #86919b;
+}
+header .nav_top ul.toolbar li .dropDown .login_info a:last-child {
+  background-color: #fff;
+  margin-bottom: 0;
+  border-color: #82cbc4;
+  color: #82cbc4;
+}
+header .nav_top ul.toolbar li .dropDown .login_info a:last-child:hover {
+  background-color: #82cbc4;
+  color: #fff;
+}
 
 header ul.nav {
   background-color: #82cbc4;
@@ -261,7 +291,7 @@ header ul.nav > li > ul.sub_menu > li:last-child {
     cursor: pointer;
   }
   header .nav_top .logo {
-    width: 50px;
+    width: 40px;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -271,11 +301,12 @@ header ul.nav > li > ul.sub_menu > li:last-child {
     top: unset;
     right: unset;
     border: none;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     transform: translateY(0);
   }
   header .nav_top ul.toolbar li {
     position: unset;
+    margin-right: 10px;
   }
   header .nav_top ul.toolbar li a {
     color: #fff;
@@ -290,11 +321,15 @@ header ul.nav > li > ul.sub_menu > li:last-child {
     width: 20px;
     height: 20px;
     padding-left: 2px;
+    margin-left: 0;
   }
   header .nav_top ul.toolbar li.active .dropDown {
-    width: calc(100vw - 10px);
+    width: 100vw;
     top: calc(100% + 15px);
     right: -15px;
+  }
+  header .nav_top ul.toolbar li .dropDown .cart_info {
+    padding-top: 10px;
   }
 
   header ul.nav {
