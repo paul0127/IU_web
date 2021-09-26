@@ -21,9 +21,26 @@
   color: #ffa15a;
   font-weight: 600;
 }
+@media (max-width: 800px) {
+  .b_title {
+    margin: 0 auto 20px auto;
+  }
+  .b_title .inner .name {
+    font-size: 2rem;
+  }
+  .b_title .inner .s_name {
+    font-size: 1.25rem;
+  }
+}
 
+/* 首頁banner */
 .banner {
   margin-bottom: 45px;
+}
+@media (max-width: 800px) {
+  .banner {
+    margin-bottom: 20px;
+  }
 }
 /* 首頁廣告 */
 .index_adv {
@@ -119,19 +136,88 @@
 .index_adv .column.five > span:last-child {
   margin-right: 0;
 }
-.index_adv .column.five > span:first-child a:first-child{
+.index_adv .column.five > span:first-child a:first-child {
   flex: 3;
   margin-bottom: 18%;
 }
-.index_adv .column.five > span:first-child a:last-child{
+.index_adv .column.five > span:first-child a:last-child {
   flex: 4;
 }
-.index_adv .column.five > span:last-child a:first-child{
+.index_adv .column.five > span:last-child a:first-child {
   flex: 4;
   margin-bottom: 18%;
 }
-.index_adv .column.five > span:last-child a:last-child{
+.index_adv .column.five > span:last-child a:last-child {
   flex: 3;
+}
+@media (max-width: 800px) {
+  .index_adv {
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+  }
+  .index_adv .column {
+    flex-wrap: wrap;
+  }
+  .index_adv .column a img {
+    width: 100%;
+  }
+
+  .index_adv .column.two a {
+    margin-right: 0;
+  }
+  .index_adv .column.two a:first-child {
+    flex: 0 0 100%;
+    margin-bottom: 20px;
+  }
+  .index_adv .column.two a:last-child {
+    flex: 0 0 100%;
+  }
+
+  .index_adv .column.three > a {
+    flex: 0 0 100%;
+    margin-bottom: 20px;
+  }
+  .index_adv .column.three > span {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .index_adv .column.three > span > a:first-child {
+    flex: 0 0 100%;
+    margin-bottom: 20px;
+  }
+  .index_adv .column.three > span > a:last-child {
+    flex: 0 0 100%;
+  }
+
+  .index_adv .column.four > span {
+    flex: 0 0 100%;
+    margin-right: 0;
+  }
+  .index_adv .column.four > span:first-child {
+    margin-bottom: 20px;
+  }
+  .index_adv .column.four > span > a {
+    margin-bottom: 20px;
+  }
+
+  .index_adv .column.five > span {
+    flex: 0 0 100%;
+    margin-right: 0;
+  }
+  .index_adv .column.five > span:first-child {
+    margin-bottom: 20px;
+  }
+  .index_adv .column.five > span:first-child a:first-child {
+    margin-bottom: 20px;
+  }
+  .index_adv .column.five > a {
+    flex: 0 0 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .index_adv .column.five > span:last-child a:first-child {
+    margin-bottom: 20px;
+  }
 }
 
 /* 首頁消息 */
@@ -162,6 +248,9 @@
 .index_news .list .item .inner .image {
   margin-bottom: 20px;
 }
+.index_news .list .item .inner .image img {
+  width: 100%;
+}
 .index_news .list .item .inner .time {
   color: #000;
   margin-bottom: 10px;
@@ -171,6 +260,19 @@
   color: #000;
   padding: 0 20px;
   font-weight: 700;
+}
+@media (max-width: 800px) {
+  .index_news {
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+  }
+  .index_news .list {
+    flex-wrap: wrap;
+  }
+  .index_news .list .item {
+    flex: 0 0 100%;
+    margin-bottom: 20px;
+  }
 }
 
 /* 首頁產品 */
@@ -244,6 +346,35 @@
 .index_product .list .item .buy_btn:hover {
   opacity: 0.8;
 }
+@media (max-width: 1000px) {
+  .index_product .list .item .name {
+    padding: 0 10px;
+  }
+  .index_product .list .item .price {
+    font-size: 1rem;
+  }
+  .index_product .list .item .price .discount {
+    margin-right: 10px;
+  }
+}
+@media (max-width: 800px) {
+  .index_product {
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+  }
+  .index_product .list {
+    flex-wrap: wrap;
+  }
+  .index_product .list .item {
+    flex: 0 0 50%;
+  }
+  .index_product .list .item .price {
+    font-size: 1.25rem;
+  }
+  .index_product .list .item .price .discount {
+    margin-right: 20px;
+  }
+}
 
 /* 首頁品牌 */
 .index_brand {
@@ -268,6 +399,33 @@
 .index_brand .list .item .image:hover {
   opacity: 0.8;
 }
+.index_brand .list .item .image img {
+  width: 100%;
+}
+@media (max-width: 1350px) {
+  .index_brand .list {
+    margin: 0 -15px -40px -15px;
+  }
+  .index_brand .list .item {
+    flex: 0 0 25%;
+    padding: 0 15px;
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 800px) {
+  .index_brand {
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+  }
+  .index_brand .list {
+    margin: 0 -15px -40px -15px;
+  }
+  .index_brand .list .item {
+    flex: 0 0 33.33%;
+    padding: 0 15px;
+    margin-bottom: 40px;
+  }
+}
 
 /* 首頁icon */
 .index_icon {
@@ -291,4 +449,19 @@
   border-radius: 100%;
   color: #fff;
   margin-bottom: 45px;
+}
+@media (max-width: 800px) {
+  .index_icon {
+    flex-wrap: wrap;
+  }
+  .index_icon .item {
+    flex: 0 0 100%;
+    margin-bottom: 40px;
+  }
+  .index_icon .item:last-child {
+    margin-bottom: 0;
+  }
+  .index_icon .item .icon {
+    margin-bottom: 20px;
+  }
 }
