@@ -369,10 +369,14 @@
     flex: 0 0 50%;
   }
   .index_product .list .item .price {
-    font-size: 1.25rem;
+    font-size: 1rem;
   }
   .index_product .list .item .price .discount {
     margin-right: 20px;
+  }
+  .index_product .list .item .buy_btn {
+    width: 120px;
+    font-size: 1.1rem;
   }
 }
 
@@ -421,7 +425,7 @@
     margin: 0 -15px -40px -15px;
   }
   .index_brand .list .item {
-    flex: 0 0 33.33%;
+    flex: 0 0 50%;
     padding: 0 15px;
     margin-bottom: 40px;
   }

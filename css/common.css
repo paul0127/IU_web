@@ -12,6 +12,9 @@ body.fixed {
 img {
   max-width: 100%;
 }
+label {
+  margin-bottom: 0;
+}
 .container.custom {
   max-width: 1260px;
 }
@@ -138,7 +141,20 @@ header .nav_top ul.toolbar li .dropDown .cart_info .list .item .text {
   font-size: 1rem;
 }
 header .nav_top ul.toolbar li .dropDown .cart_info .list .item .text .name {
-  margin-bottom: 10px;
+  margin-bottom: 5px;
+}
+header
+  .nav_top
+  ul.toolbar
+  li
+  .dropDown
+  .cart_info
+  .list
+  .item
+  .text
+  .qty
+  label {
+  margin-bottom: 0;
 }
 header .nav_top ul.toolbar li .dropDown .cart_info .to_cart {
   font-size: 1rem;
@@ -498,4 +514,112 @@ footer .foot_right .column ul li a:hover {
   footer .foot_right .column ul {
     padding-left: 0;
   }
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #333;
+  margin-bottom: 25px;
+  margin-top: 40px;
+}
+.title ul.bread {
+  display: flex;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+  padding-bottom: 10px;
+}
+.title ul.bread > li {
+  display: flex;
+  align-items: center;
+}
+.title ul.bread > li::before {
+  content: '\f054';
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  margin-right: 10px;
+  font-size: 1.75rem;
+}
+.title ul.bread > li a {
+  font-size: 2rem;
+  color: #333;
+  text-decoration: none;
+}
+.title .right {
+  display: flex;
+  align-items: center;
+}
+.title .right .select {
+  margin-right: 30px;
+}
+.title .right .select select {
+  outline: none;
+  padding: 3px 10px;
+}
+.title .right .product_total {
+  margin-right: 30px;
+  font-size: 0.75rem;
+}
+.title .right ul.tab_btns {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+.title .right ul.tab_btns > li {
+  width: 27px;
+  height: 27px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #333;
+  cursor: pointer;
+}
+.title .right ul.tab_btns > li.active {
+  background-color: #333;
+  color: #fff;
+}
+.title .right ul.tab_btns > li:last-child {
+  border-left: none;
+}
+@media (max-width: 800px) {
+  .title {
+    flex-wrap: wrap;
+    margin-top: 0;
+  }
+  .title ul.bread {
+    flex: 0 0 100%;
+  }
+  .title .right {
+    flex: 0 0 100%;
+    justify-content: flex-end;
+    padding-bottom: 10px;
+  }
+}
+.page {
+  padding-bottom: 60px;
+}
+ul.pager {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+ul.pager li {
+  background-color: #82cbc4;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+ul.pager li:hover {
+  opacity: 0.8;
 }
