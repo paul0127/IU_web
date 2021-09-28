@@ -263,6 +263,17 @@
                 <input type="number" name="" id="" value="1" readonly />
                 <div class="plus"><i class="fas fa-plus"></i></div>
               </div>
+              <div class="btns">
+                <div class="cart_btn">加入購物車</div>
+                <div class="follow_btn">加入追蹤</div>
+                <div class="buy_btn">立即購買</div>
+              </div>
+            </div>
+          </div>
+          <div class="info_middle">
+            <div class="title">DETAIL</div>
+            <div class="descript">
+              <img src="./images/product/product.png" alt="">
             </div>
           </div>
         </div>
@@ -340,6 +351,19 @@
         item.addEventListener('click', () => {
           owl.trigger('to.owl.carousel', [index])
         })
+      })
+
+      let qty = document.querySelector('.qty input')
+      let minus = document.querySelector('.qty .minus')
+      let plus = document.querySelector('.qty .plus')
+
+      minus.addEventListener('click', () => {
+        if (Number(qty.value) > 1) {
+          qty.value = Number(qty.value) - 1
+        }
+      })
+      plus.addEventListener('click', () => {
+        qty.value = Number(qty.value) + 1
       })
     </script>
   </body>
