@@ -359,6 +359,7 @@ header ul.nav > li > ul.sub_menu > li:last-child {
     transform: scaleY(0);
     transform-origin: top;
     transition-duration: 0.3s;
+    z-index: 3;
   }
   header ul.nav.active {
     transform: scaleY(1);
@@ -533,11 +534,16 @@ footer .foot_right .column ul li a:hover {
 .title ul.bread > li {
   display: flex;
   align-items: center;
+  margin-right: 10px;
 }
 .title ul.bread > li::before {
-  content: '\f054';
-  font-family: 'Font Awesome 5 Free';
-  font-weight: 900;
+  content: '';
+  background: url(../images/common/arrow.svg);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 25px;
+  height: 100%;
   margin-right: 10px;
   font-size: 1.75rem;
 }
@@ -584,18 +590,42 @@ footer .foot_right .column ul li a:hover {
 .title .right ul.tab_btns > li:last-child {
   border-left: none;
 }
+@media (max-width: 1200px) {
+  .title {
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+  .title ul.bread > li::before {
+    width: 20px;
+  }
+  .title ul.bread > li a {
+    font-size: 1.25rem;
+  }
+}
 @media (max-width: 800px) {
   .title {
     flex-wrap: wrap;
-    margin-top: 0;
+    margin-top: 10px;
   }
-  .title ul.bread {
-    flex: 0 0 100%;
+  .title ul.bread > li {
+    margin-right: 5px;
+  }
+  .title ul.bread > li::before {
+    width: 15px;
+    margin-right: 5px;
+  }
+  .title ul.bread > li a {
+    font-size: 1rem;
   }
   .title .right {
-    flex: 0 0 100%;
     justify-content: flex-end;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
+  }
+  .title .right .select {
+    margin-right: 20px;
+  }
+  .title .right .product_total {
+    margin-right: 20px;
   }
 }
 .page {
