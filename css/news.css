@@ -1,0 +1,60 @@
+@import url(./common.css);
+
+.news .list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+  margin-bottom: 50px;
+}
+.news .list .item {
+  flex: 0 0 33.33%;
+  padding: 0 15px;
+  margin-bottom: 30px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+.news .list .item:hover {
+  opacity: 0.8;
+}
+.news .list .item .inner {
+  background-color: #f3f3f3;
+  padding-bottom: 20px;
+}
+.news .list .item .inner .image {
+  margin-bottom: 20px;
+}
+.news .list .item .inner .image img {
+  width: 100%;
+}
+.news .list .item .inner .time {
+  color: #000;
+  margin-bottom: 10px;
+  font-size: 0.85rem;
+}
+.news .list .item .inner .name {
+  color: #000;
+  padding: 0 20px;
+  font-weight: 700;
+}
+@media (max-width: 800px) {
+  .news {
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+  }
+  .news .list {
+    flex-wrap: wrap;
+  }
+  .news .list .item {
+    flex: 0 0 100%;
+    margin-bottom: 20px;
+  }
+}
+
+.news .info .name {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+.news .info .time {
+  margin-bottom: 20px;
+}
