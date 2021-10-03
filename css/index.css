@@ -370,9 +370,10 @@
   }
   .index_product .list .item .price {
     font-size: 1rem;
+    flex-direction: column;
   }
   .index_product .list .item .price .discount {
-    margin-right: 20px;
+    margin-right: 0;
   }
   .index_product .list .item .buy_btn {
     width: 120px;
