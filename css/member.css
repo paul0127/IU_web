@@ -98,7 +98,7 @@
   flex-wrap: wrap;
   margin-bottom: 40px;
 }
-.page.member .right_frame .form .list .item.full{
+.page.member .right_frame .form .list .item.full {
   flex: 0 0 100%;
 }
 .page.member .right_frame .form .list .item.inline {
@@ -221,7 +221,7 @@
   span.circle::before {
   background-color: #333;
 }
-.page.member .right_frame .form .list .item .alert_text{
+.page.member .right_frame .form .list .item .alert_text {
   margin-top: 20px;
   color: #82cbc4;
   font-size: 1.25rem;
@@ -231,7 +231,7 @@
   align-items: center;
   justify-content: center;
 }
-.page.member .right_frame .form .send a{
+.page.member .right_frame .form .send a {
   background-color: #82cbc4;
   color: #fff;
   font-size: 1.5rem;
@@ -241,4 +241,123 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.page.member .right_frame .table {
+  margin-bottom: 50px;
+  color: #333;
+}
+.page.member .right_frame .table .head {
+  display: flex;
+  background-color: #00000029;
+}
+.page.member .right_frame .table .head .th {
+  flex: 1;
+  text-align: center;
+  padding: 8px 0;
+  font-weight: bold;
+}
+
+.page.member .right_frame .table .body {
+  border-top: 1px solid #707070;
+}
+.page.member .right_frame .table .body .tr_group .tr {
+  display: flex;
+}
+.page.member .right_frame .table .body .tr_group .tr .td {
+  flex: 1;
+  text-align: center;
+  border: 1px solid #707070;
+  border-top: none;
+  border-right: none;
+  padding: 8px 0;
+  font-weight: bold;
+}
+.page.member .right_frame .table .body .tr_group .tr .td.operate a {
+  color: #33333380;
+}
+.page.member .right_frame .table .body .tr_group .tr .td.operate a:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+.page.member .right_frame .table .body .tr_group .tr .td:last-child {
+  border-right: 1px solid #707070;
+}
+.page.member .right_frame .table .operate {
+  flex: 0 0 70px !important;
+}
+.page.member .right_frame .table .shoptype {
+  flex: 0 0 110px !important;
+}
+.page.member .right_frame .table .payment {
+  flex: 0 0 105px !important;
+}
+.page.member .right_frame .table .ship {
+  flex: 0 0 105px !important;
+}
+.page.member .right_frame .table .status {
+  flex: 0 0 105px !important;
+}
+
+.page.member .right_frame .table .body .tr_group .content {
+  border-left: 1px solid #707070;
+  border-right: 1px solid #707070;
+  border-bottom: 1px solid #707070;
+  display: none;
+}
+.page.member .right_frame .table .body .tr_group.active .content {
+  display: block;
+}
+.page.member .right_frame .table .body .tr_group .content .c_head {
+  display: flex;
+}
+.page.member .right_frame .table .body .tr_group .content .c_head .c_th {
+  flex: 1;
+  text-align: center;
+  font-weight: bold;
+  padding: 8px 10px;
+}
+.page.member .right_frame .table .body .tr_group .content .c_body .c_tr {
+  display: flex;
+}
+.page.member .right_frame .table .body .tr_group .content .c_body .c_tr .c_td {
+  flex: 1;
+  text-align: center;
+  padding: 8px 10px;
+}
+.page.member .right_frame .table .body .tr_group .content .c_body .c_tr .c_td.price,.page.member .right_frame .table .body .tr_group .content .c_body .c_tr .c_td.m_total{
+  color: #82cbc4;
+}
+.page.member .right_frame .table .body .tr_group .content .c_foot{
+  border-top: 1px solid #707070;
+  padding: 20px 0;
+}
+.page.member .right_frame .table .body .tr_group .content .c_foot .c_tr {
+  display: flex;
+}
+.page.member .right_frame .table .body .tr_group .content .c_foot .c_tr .c_td {
+  flex: 1;
+  text-align: right;
+  padding: 5px 10px;
+}
+.page.member .right_frame .table .body .tr_group .content .img{
+  flex: 0 0 80px !important;
+}
+.page.member .right_frame .table .body .tr_group .content .img img{
+  width: 57px;
+}
+.page.member .right_frame .table .body .tr_group .content .spec{
+  flex: 0 0 80px !important;
+}
+.page.member .right_frame .table .body .tr_group .content .price{
+  flex: 0 0 100px !important;
+  text-align: right !important;
+}
+.page.member .right_frame .table .body .tr_group .content .qty{
+  flex: 0 0 80px !important;
+  text-align: right !important;
+}
+.page.member .right_frame .table .body .tr_group .content .m_total{
+  flex: 0 0 100px !important;
+  text-align: right !important;
 }
