@@ -1,0 +1,60 @@
+@import url(./common.css);
+
+.page.member {
+  display: flex;
+}
+.page.member .left_menu {
+  flex: 0 0 300px;
+  position: relative;
+  padding: 60px 15px 20px 15px;
+  margin-top: 50px;
+  border: 1px solid #707070;
+  margin-right: 50px;
+}
+.page.member .left_menu .level {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  background-color: #82cbc4;
+  color: #fff;
+  border-radius: 100%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.15rem;
+}
+.page.member .left_menu ul {
+  padding-left: 0;
+  list-style: none;
+  margin-bottom: 20px;
+}
+.page.member .left_menu ul li{
+  border-bottom: 1px solid #707070;
+  margin-bottom: 15px;
+  padding-bottom: 5px;
+}
+.page.member .left_menu ul li a {
+  color: #333;
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1.15rem;
+}
+.page.member .left_menu ul li a:after {
+  content: '\f054';
+  font-family: "Font Awesome 5 Free";
+  color: #82cbc4;
+  font-size: 1.25rem;
+}
+.page.member .left_menu button{
+  width: 100%;
+  background-color: #82cbc4;
+  border: none;
+  color: #fff;
+  padding: 5px 0;
+  font-size: 1.15rem;
+}
