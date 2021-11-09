@@ -195,6 +195,29 @@ header .nav_top ul.toolbar li .dropDown .login_info a:last-child:hover {
   background-color: #82cbc4;
   color: #fff;
 }
+header .nav_top ul.toolbar li .dropDown .member_nav ul{
+  list-style: none;
+  padding-left: 0;
+  font-size: 1.25rem;
+}
+header .nav_top ul.toolbar li .dropDown .member_nav ul li{
+  margin-right: 0;
+  padding-bottom: 5px;
+  border-bottom: 1px dotted #707070;
+  margin-bottom: 10px;
+}
+header .nav_top ul.toolbar li .dropDown .member_nav ul li a{
+  color: #333;
+}
+header .nav_top ul.toolbar li .dropDown .member_nav button{
+  background-color: #82cbc4;
+  color: #fff;
+  font-size: 1.25rem;
+  padding: 7px 0;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+}
 
 header ul.nav {
   background-color: #82cbc4;
@@ -287,6 +310,9 @@ header ul.nav > li > ul.sub_menu > li:last-child {
   }
 }
 @media (max-width: 1000px) {
+  body::-webkit-scrollbar {
+    width: 0;
+  }
   header {
     border: none;
     background-color: #82cbc4;
@@ -343,6 +369,7 @@ header ul.nav > li > ul.sub_menu > li:last-child {
     width: 100vw;
     top: calc(100% + 15px);
     right: -15px;
+    padding: 10px 15px;
   }
   header .nav_top ul.toolbar li .dropDown .cart_info {
     padding-top: 10px;

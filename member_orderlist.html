@@ -31,9 +31,15 @@
           <li class="member_bar">
             <a><i class="fas fa-user"></i></a>
             <div class="dropDown">
-              <div class="login_info">
-                <a href="./login.html">會員登入</a>
-                <a href="./regist_index.html">註冊新會員</a>
+              <div class="member_nav">
+                <ul>
+                  <li><a href="./member_info.html">個人資訊</a></li>
+                  <li><a href="./member_password.html">更改密碼</a></li>
+                  <li><a href="./member_orderlist.html">訂單查詢</a></li>
+                  <li><a href="./member_address.html">收件地址管理</a></li>
+                  <li><a href="./member_love.html">收藏清單</a></li>
+                </ul>
+                <button>登出</button>
               </div>
             </div>
           </li>
@@ -213,7 +219,7 @@
             <div class="body">
               <div class="tr_group active">
                 <div class="tr">
-                  <div class="td">2021071400001</div>
+                  <div class="td">20210714001</div>
                   <div class="td shoptype">零售</div>
                   <div class="td">2021/07/14</div>
                   <div class="td status">訂單成立</div>
@@ -222,6 +228,11 @@
                   <div class="td operate"><a>檢視</a></div>
                 </div>
                 <div class="content">
+                  <div class="order_detail">
+                    <div class="item"><label for="">訂購方式：</label>零售</div>
+                    <div class="item"><label for="">寄件方式：</label>公司寄送</div>
+                    <div class="item"><label for="">付款方式：</label>貨到付款</div>
+                  </div>
                   <div class="c_head">
                     <div class="c_th img"></div>
                     <div class="c_th">商品</div>
@@ -234,7 +245,17 @@
                     <div class="c_tr">
                       <div class="c_td img"><img src="./images/member/product.png" alt=""></div>
                       <div class="c_td">
-                        本期07月每刊好物(2107-02)美髮轉 燈水槍
+                        本期07月每刊好物美髮轉本期07月每刊好物美髮轉 燈水槍 <span class="specification">- 100ml</span>
+                      </div>
+                      <div class="c_td spec"></div>
+                      <div class="c_td price">$79000</div>
+                      <div class="c_td qty">1</div>
+                      <div class="c_td m_total">$79000</div>
+                    </div>
+                    <div class="c_tr">
+                      <div class="c_td img"><img src="./images/member/product.png" alt=""></div>
+                      <div class="c_td">
+                        本期07月每刊好物(2107-02)美髮轉 燈水槍 <span class="specification">- 100ml</span>
                       </div>
                       <div class="c_td spec"></div>
                       <div class="c_td price">$79</div>
@@ -244,17 +265,7 @@
                     <div class="c_tr">
                       <div class="c_td img"><img src="./images/member/product.png" alt=""></div>
                       <div class="c_td">
-                        本期07月每刊好物(2107-02)美髮轉 燈水槍
-                      </div>
-                      <div class="c_td spec"></div>
-                      <div class="c_td price">$79</div>
-                      <div class="c_td qty">1</div>
-                      <div class="c_td m_total">$79</div>
-                    </div>
-                    <div class="c_tr">
-                      <div class="c_td img"><img src="./images/member/product.png" alt=""></div>
-                      <div class="c_td">
-                        本期07月每刊好物(2107-02)美髮轉 燈水槍
+                        本期07月每刊好物(2107-02)美髮轉 燈水槍 <span class="specification">- 100ml</span>
                       </div>
                       <div class="c_td spec"></div>
                       <div class="c_td price">$79</div>
@@ -280,7 +291,7 @@
               </div>
               <div class="tr_group">
                 <div class="tr">
-                  <div class="td">2021071400001</div>
+                  <div class="td">20210714001</div>
                   <div class="td shoptype">零售</div>
                   <div class="td">2021/07/14</div>
                   <div class="td status">訂單成立</div>
@@ -289,6 +300,11 @@
                   <div class="td operate"><a>檢視</a></div>
                 </div>
                 <div class="content">
+                  <div class="order_detail">
+                    <div class="item"><label for="">訂購方式：</label>零售</div>
+                    <div class="item"><label for="">寄件方式：</label>公司寄送</div>
+                    <div class="item"><label for="">付款方式：</label>貨到付款</div>
+                  </div>
                   <div class="c_head">
                     <div class="c_th img"></div>
                     <div class="c_th">商品</div>
@@ -301,7 +317,7 @@
                     <div class="c_tr">
                       <div class="c_td img"><img src="./images/member/product.png" alt=""></div>
                       <div class="c_td">
-                        本期07月每刊好物(2107-02)美髮轉 燈水槍
+                        本期07月每刊好物(2107-02)美髮轉 燈水槍 <span class="specification">- 100ml</span>
                       </div>
                       <div class="c_td spec"></div>
                       <div class="c_td price">$79</div>
@@ -390,5 +406,13 @@
     ></script>
     <script src="./offset/owlCarousel/js/owl.carousel.min.js"></script>
     <script src="./js/main.js"></script>
+    <script>
+      let toggles= document.querySelectorAll('.tr_group .tr .td.operate a')
+      toggles.forEach(item=>{
+        item.addEventListener('click',()=>{
+          item.parentElement.parentElement.parentElement.classList.toggle('active')
+        })
+      })
+    </script>
   </body>
 </html>
