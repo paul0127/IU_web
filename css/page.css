@@ -1,0 +1,9 @@
+@import url(./common.css);
+
+.onepage .info .name {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+.onepage .info .time {
+  margin-bottom: 20px;
+}
