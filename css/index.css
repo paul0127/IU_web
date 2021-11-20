@@ -21,6 +21,14 @@
   color: #ffa15a;
   font-weight: 600;
 }
+@media (max-width: 1500px) {
+  .b_title {
+    margin: 0 auto 30px auto;
+  }
+  .b_title .inner .name {
+    font-size: 2.25rem;
+  }
+}
 @media (max-width: 800px) {
   .b_title {
     margin: 0 auto 20px auto;
@@ -223,17 +231,18 @@
 /* 首頁消息 */
 .index_news {
   display: block;
-  padding-bottom: 50px;
   margin-bottom: 70px;
   border-bottom: 1px solid #9f9090;
 }
 .index_news .list {
   display: flex;
+  flex-wrap: wrap;
   margin: 0 -15px;
 }
 .index_news .list .item {
   flex: 0 0 33.33%;
   padding: 0 15px;
+  margin-bottom: 50px;
   text-align: center;
   text-decoration: none;
   cursor: pointer;
@@ -277,19 +286,19 @@
 
 /* 首頁產品 */
 .index_product {
-  padding-bottom: 50px;
   margin-bottom: 70px;
   border-bottom: 1px solid #9f9090;
 }
 .index_product .list {
   display: flex;
+  flex-wrap: wrap;
   margin: 0 -15px;
 }
 .index_product .list .item {
   flex: 0 0 25%;
   padding: 0 15px;
   text-align: center;
-  padding-bottom: 20px;
+  padding-bottom: 50px;
   text-decoration: none;
 }
 .index_product .list .item .image {

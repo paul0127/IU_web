@@ -11,6 +11,10 @@
       integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="./offset/owlCarousel/css/owl.carousel.min.css"
+    />
     <link rel="stylesheet" href="./offset/fontawesome/css/all.min.css" />
     <link rel="stylesheet" href="./css/index.css" />
   </head>
@@ -19,7 +23,9 @@
       <div class="nav_top">
         <div class="menu_btn"><i class="fas fa-bars"></i></div>
         <div class="logo">
-          <a href="./index.html"><img src="./images/common/logo.png" alt="" /></a>
+          <a href="./index.html"
+            ><img src="./images/common/logo.png" alt=""
+          /></a>
         </div>
         <ul class="toolbar">
           <li class="member_bar">
@@ -174,8 +180,10 @@
         </li>
       </ul>
     </header>
-    <div class="banner">
-      <img src="./images/index/banner.png" alt="" />
+    <div class="banner owl-carousel owl-theme">
+      <div class="item">
+        <img src="./images/index/banner.png" alt="" />
+      </div>
     </div>
     <div class="container custom">
       <div class="index_adv">
@@ -501,6 +509,24 @@
       integrity="sha512-k2WPPrSgRFI6cTaHHhJdc8kAXaRM4JBFEDo1pPGGlYiOyv4vnA0Pp0G5XMYYxgAPmtmv/IIaQA6n5fLAyJaFMA=="
       crossorigin="anonymous"
     ></script>
+    <script src="./offset/owlCarousel/js/owl.carousel.min.js"></script>
     <script src="./js/main.js"></script>
+    <script>
+      $('.banner').owlCarousel({
+        loop: true,
+        dots: true,
+        margin: 0,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        autoplayHoverPause: true,
+        responsiveClass: true,
+        nav: false,
+        responsive: {
+          0: {
+            items: 1,
+          },
+        },
+      })
+    </script>
   </body>
 </html>

@@ -753,10 +753,10 @@
     display: none;
   }
   .page.member .right_frame .table .status {
-    flex: 0 0 80px !important;
+    flex: 0 0 70px !important;
   }
   .page.member .right_frame .table .operate {
-    flex: 0 0 60px !important;
+    flex: 0 0 50px !important;
   }
   .page.member .right_frame .table .option {
     flex: 0 0 40px !important;
@@ -890,6 +890,9 @@
 .page.member .right_frame .form .pro_list .item .image img {
   border: 1px solid #707070;
 }
+.page.member .right_frame .form .pro_list .item .text{
+  margin-right: 10px;
+}
 .page.member .right_frame .form .pro_list .item .text .name {
   display: block;
   color: #333;
@@ -899,7 +902,6 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  font-size: 1.25rem;
 }
 .page.member .right_frame .form .pro_list .item .text .price .discount {
   text-decoration: line-through;
@@ -923,6 +925,8 @@
   color: #fff;
   border-radius: 20px;
   margin-bottom: 20px;
+  text-decoration: none;
+  cursor: pointer;
 }
 .page.member .right_frame .form .pro_list .item .operate .delete {
   display: flex;
@@ -934,4 +938,30 @@
   color: #333;
   border: 1px solid #707070;
   border-radius: 20px;
+  text-decoration: none;
+  cursor: pointer;
+}
+.page.member .right_frame .form .pro_list .item .operate .add:hover,
+.page.member .right_frame .form .pro_list .item .operate .delete:hover {
+  opacity: 0.8;
+}
+@media (max-width: 1000px) {
+  .page.member .right_frame .form .pro_list .item .image {
+    width: 80px;
+    margin-right: 10px;
+  }
+  .page.member .right_frame .form .pro_list .item .text .name {
+    font-size: 0.85rem;
+  }
+  .page.member .right_frame .form .pro_list .item .text .price {
+    font-size: 0.85rem;
+  }
+  .page.member .right_frame .form .pro_list .item .operate .add {
+    margin-bottom: 10px;
+  }
+  .page.member .right_frame .form .pro_list .item .operate .add,
+  .page.member .right_frame .form .pro_list .item .operate .delete {
+    width: 90px;
+    font-size: 0.75rem;
+  }
 }
