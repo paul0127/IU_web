@@ -1,6 +1,6 @@
 @import url(./common.css);
 
-.product .top{
+.product .top {
   margin-bottom: 50px;
 }
 .product .list {
@@ -79,6 +79,7 @@
 }
 .product .list.list_column .item .image {
   margin-right: 30px;
+  flex: 0 0 250px;
 }
 .product .list.list_column .item .text {
   flex: 1;
@@ -104,7 +105,7 @@
   .product .list .item {
     flex: 0 0 50%;
   }
-  .product .list .item .text .name{
+  .product .list .item .text .name {
     padding: 0;
   }
   .product .list.list_column .item .image {
@@ -216,6 +217,9 @@
 }
 .product .info .info_top .text .brand {
   margin-bottom: 5px;
+}
+.product .info .info_top .text .brand a {
+  color: #000;
 }
 .product .info .info_top .text .stock {
   margin-bottom: 5px;
@@ -435,11 +439,13 @@
 @media (max-width: 1200px) {
   .product .info .info_top .img {
     width: 500px;
+    flex: 0 0 500px;
   }
 }
 @media (max-width: 1000px) {
   .product .info .info_top .img {
     width: 450px;
+    flex: 0 0 450px;
   }
 }
 @media (max-width: 800px) {
@@ -448,6 +454,7 @@
   }
   .product .info .info_top .img {
     width: 100%;
+    flex: 0 0 100%;
     margin-right: 0;
     margin-bottom: 20px;
     padding: 0;
@@ -482,7 +489,7 @@
   .product .info .info_bottom .recommend_list .item {
     flex: 0 0 50%;
   }
-  .product .info .info_bottom .recommend_list .item .text .name{
+  .product .info .info_bottom .recommend_list .item .text .name {
     padding: 0;
   }
   .product .info .info_bottom .recommend_list .item .text .price {

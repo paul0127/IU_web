@@ -304,10 +304,10 @@ header ul.nav > li > ul.sub_menu > li:last-child {
   header .nav_top ul.toolbar li {
     margin-right: 15px;
   }
-  header .nav_top ul.toolbar li a span.num{
+  header .nav_top ul.toolbar li a span.num {
     width: 23px;
     height: 23px;
-    font-size: .75rem;
+    font-size: 0.75rem;
   }
 }
 @media (max-width: 1300px) {
@@ -600,6 +600,7 @@ footer .foot_right .column ul li a:hover {
   margin-right: 10px;
   font-size: 1.75rem;
 }
+.title ul.bread > li,
 .title ul.bread > li a {
   font-size: 2rem;
   color: #333;
@@ -644,6 +645,7 @@ footer .foot_right .column ul li a:hover {
   border-left: none;
 }
 @media (max-width: 1500px) {
+  .title ul.bread > li,
   .title ul.bread > li a {
     font-size: 1.5rem;
   }
@@ -656,6 +658,7 @@ footer .foot_right .column ul li a:hover {
   .title ul.bread > li::before {
     width: 20px;
   }
+  .title ul.bread > li,
   .title ul.bread > li a {
     font-size: 1.25rem;
   }
@@ -672,7 +675,7 @@ footer .foot_right .column ul li a:hover {
     width: 15px;
     margin-right: 5px;
   }
-  .title ul.bread > li a {
+  .title ul.bread > li ,.title ul.bread > li a {
     font-size: 1rem;
   }
   .title .right {
@@ -708,6 +711,13 @@ ul.pager li {
   margin-right: 5px;
   border-radius: 5px;
   cursor: pointer;
+}
+ul.pager li.active {
+  background-color: #6ea9a3;
+}
+ul.pager li.unable {
+  background-color: #707070;
+  cursor: not-allowed;
 }
 ul.pager li:hover {
   opacity: 0.8;
