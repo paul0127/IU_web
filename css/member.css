@@ -151,7 +151,8 @@
   margin-bottom: 0;
   margin-right: 20px;
 }
-.page.member .right_frame .form .list .item > input[type='text'] {
+.page.member .right_frame .form .list .item > input[type='text'],
+.page.member .right_frame .form .list .item > input[type='password'] {
   min-width: 0;
   flex: 0 0 100%;
   padding: 10px 20px;
@@ -162,7 +163,8 @@
   color: #333;
   font-size: 1.25rem;
 }
-.page.member .right_frame .form .list .item input[type='text']::placeholder {
+.page.member .right_frame .form .list .item input[type='text']::placeholder,
+.page.member .right_frame .form .list .item input[type='password']::placeholder {
   color: #333;
 }
 .page.member .right_frame .form .list .item > select {
@@ -333,6 +335,7 @@
   align-items: center;
   justify-content: center;
   text-decoration: none;
+  cursor: pointer;
 }
 .page.member .right_frame .form .send a:hover {
   opacity: 0.8;
@@ -890,7 +893,7 @@
 .page.member .right_frame .form .pro_list .item .image img {
   border: 1px solid #707070;
 }
-.page.member .right_frame .form .pro_list .item .text{
+.page.member .right_frame .form .pro_list .item .text {
   margin-right: 10px;
 }
 .page.member .right_frame .form .pro_list .item .text .name {

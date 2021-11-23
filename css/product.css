@@ -3,6 +3,9 @@
 .product .top {
   margin-bottom: 50px;
 }
+.product .top img {
+  width: 100%;
+}
 .product .list {
   display: flex;
   flex-wrap: wrap;
