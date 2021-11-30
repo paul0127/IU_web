@@ -523,6 +523,7 @@
   border-right: 1px solid #707070;
   border-bottom: 1px solid #707070;
   padding-top: 30px;
+  padding-bottom: 15px;
 }
 .payment .info .table .foot .tr {
   display: flex;
@@ -541,6 +542,7 @@
 }
 .payment .info .table .foot .alert {
   text-align: right;
+  margin-bottom: 0;
 }
 .payment .info .table .image {
   flex: 0 0 120px !important;
@@ -689,6 +691,7 @@
 .payment .info .information .section textarea {
   border: 1px solid #707070;
   border-radius: 5px;
+  padding: 10px;
   width: 100%;
   min-height: 120px;
 }
