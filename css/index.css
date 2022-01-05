@@ -63,12 +63,16 @@
 .index_adv .column a:hover {
   opacity: 0.8;
 }
+.index_adv .column a .img {
+  background-size: cover;
+  background-position: center;
+}
 /* 一個 */
 .index_adv .column.one a {
   flex: 1;
 }
-.index_adv .column.one a img {
-  width: 100%;
+.index_adv .column.one a .img {
+  padding-bottom: 27%;
 }
 /* 兩個 */
 .index_adv .column.two a {
@@ -81,6 +85,12 @@
   flex: 1;
   margin-right: 0;
 }
+.index_adv .column.two a:first-child .img {
+  padding-bottom: 27%;
+}
+.index_adv .column.two a:last-child .img {
+  padding-bottom: 54%;
+}
 /* 三個 */
 .index_adv .column.three a {
   cursor: pointer;
@@ -91,6 +101,9 @@
 .index_adv .column.three > a {
   flex: 3;
   margin-right: 10%;
+}
+.index_adv .column.three > a > .img {
+  padding-bottom: 123%;
 }
 .index_adv .column.three > span {
   flex: 2;
@@ -104,6 +117,12 @@
 }
 .index_adv .column.three > span > a:last-child {
   flex: 4;
+}
+.index_adv .column.three > span > a:first-child .img {
+  padding-bottom: 67%;
+}
+.index_adv .column.three > span > a:last-child .img {
+  padding-bottom: 100%;
 }
 /* 四個 */
 .index_adv .column.four > span {
@@ -119,9 +138,13 @@
 }
 .index_adv .column.four > span > a {
   margin-bottom: 10%;
+  width: 80%;
 }
 .index_adv .column.four > span > a:last-child {
   margin-bottom: 0;
+}
+.index_adv .column.four > span > a .img {
+  padding-bottom: 100%;
 }
 /* 五個 */
 .index_adv .column.five a {
@@ -133,6 +156,9 @@
 .index_adv .column.five > a {
   flex: 3;
   margin-right: 5%;
+}
+.index_adv .column.five > a > .img {
+  padding-bottom: 123%;
 }
 .index_adv .column.five > span {
   flex: 2;
@@ -157,6 +183,14 @@
 }
 .index_adv .column.five > span:last-child a:last-child {
   flex: 3;
+}
+.index_adv .column.five > span:first-child a:first-child .img,
+.index_adv .column.five > span:last-child a:last-child .img {
+  padding-bottom: 67%;
+}
+.index_adv .column.five > span:first-child a:last-child .img,
+.index_adv .column.five > span:last-child a:first-child .img {
+  padding-bottom: 100%;
 }
 @media (max-width: 800px) {
   .index_adv {
