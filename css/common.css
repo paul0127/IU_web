@@ -970,3 +970,24 @@ ul.pager li:hover {
   background-color: #037469;
   color: #fff;
 }
+@media (max-width: 800px) {
+  .pro_pop .info{
+    max-height: 100vh;
+    overflow-y: auto;
+  }
+  .pro_pop .info .img{
+    width: 100%;
+    flex: 0 0 100%;
+    margin-bottom: 30px;
+    margin-right: 0;
+  }
+  .pro_pop .info .img .img_list{
+    display: none;
+  }
+  .pro_pop .info .text{
+    flex: 0 0 100%;
+  }
+  .pro_pop .info .text .name{
+    margin-bottom: 20px;
+  }
+}

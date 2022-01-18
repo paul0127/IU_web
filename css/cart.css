@@ -1095,6 +1095,12 @@
     font-size: 1.5rem;
     margin-bottom: 20px;
   }
+  .result .info .paymentInfo{
+    font-size: 1rem;
+  }
+  .result .info .paymentInfo .item{
+    flex: 0 0 100%;
+  }
   .result .info .table .head {
     display: none;
   }
@@ -1107,11 +1113,11 @@
   .result .info .table .body .tr .td {
     font-size: 1.25rem;
   }
-  .result .info .table .body .tr .td_group {
+  .result .info .table .body .tr {
     flex-wrap: wrap;
     flex: 1;
   }
-  .result .info .table .body .tr .td_group .td {
+  .result .info .table .body .tr .td {
     flex: 0 0 100%;
   }
   .result .info .table .foot .tr .td.m_total {
@@ -1134,7 +1140,7 @@
   }
   .result .info .table .price {
     flex: 0 0 100% !important;
-    justify-content: flex-end !important;
+    justify-content: flex-start !important;
     flex-direction: row !important;
   }
   .result .info .table .price::before {
@@ -1142,7 +1148,7 @@
   }
   .result .info .table .qty {
     flex: 0 0 100% !important;
-    justify-content: flex-end !important;
+    justify-content: flex-start !important;
     flex-direction: row !important;
   }
   .result .info .table .qty::before {
@@ -1150,7 +1156,7 @@
   }
   .result .info .table .m_total {
     flex: 0 0 100% !important;
-    justify-content: flex-end !important;
+    justify-content: flex-start !important;
     flex-direction: row !important;
   }
   .result .info .table .m_total::before {
