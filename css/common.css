@@ -325,17 +325,6 @@ header ul.nav > li > ul.sub_menu > li:last-child {
   }
 }
 @media (max-width: 1200px) {
-  header {
-    border-width: 10px;
-  }
-  header ul.nav {
-    font-size: 1.25rem;
-  }
-  header ul.nav > li > ul.sub_menu {
-    font-size: 1rem;
-  }
-}
-@media (max-width: 1000px) {
   body::-webkit-scrollbar {
     width: 0;
   }
@@ -542,7 +531,7 @@ footer .foot_right .column ul li a:hover {
   opacity: 0.8;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
   footer .container {
     flex-wrap: wrap;
   }
@@ -651,19 +640,6 @@ footer .foot_right .column ul li a:hover {
   }
 }
 @media (max-width: 1200px) {
-  .title {
-    flex-wrap: wrap;
-    margin-top: 20px;
-  }
-  .title ul.bread > li::before {
-    width: 20px;
-  }
-  .title ul.bread > li,
-  .title ul.bread > li a {
-    font-size: 1.25rem;
-  }
-}
-@media (max-width: 800px) {
   .title {
     flex-wrap: wrap;
     margin-top: 10px;
@@ -970,7 +946,7 @@ ul.pager li:hover {
   background-color: #037469;
   color: #fff;
 }
-@media (max-width: 800px) {
+@media (max-width: 1200px) {
   .pro_pop .info{
     max-height: 100vh;
     overflow-y: auto;

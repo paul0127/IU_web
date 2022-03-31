@@ -37,7 +37,7 @@
   padding: 0 20px;
   font-weight: 700;
 }
-@media (max-width: 800px) {
+@media (max-width: 1200px) {
   .news {
     padding-bottom: 20px;
     margin-bottom: 40px;

@@ -29,7 +29,7 @@
     font-size: 2.25rem;
   }
 }
-@media (max-width: 800px) {
+@media (max-width: 1200px) {
   .b_title {
     margin: 0 auto 20px auto;
   }
@@ -45,7 +45,7 @@
 .banner {
   margin-bottom: 45px;
 }
-@media (max-width: 800px) {
+@media (max-width: 1200px) {
   .banner {
     margin-bottom: 20px;
   }
@@ -192,7 +192,7 @@
 .index_adv .column.five > span:last-child a:first-child .img {
   padding-bottom: 100%;
 }
-@media (max-width: 800px) {
+@media (max-width: 1200px) {
   .index_adv {
     padding-bottom: 20px;
     margin-bottom: 40px;
@@ -304,7 +304,7 @@
   padding: 0 20px;
   font-weight: 700;
 }
-@media (max-width: 800px) {
+@media (max-width: 1200px) {
   .index_news {
     padding-bottom: 20px;
     margin-bottom: 40px;
@@ -389,18 +389,7 @@
 .index_product .list .item .buy_btn:hover {
   opacity: 0.8;
 }
-@media (max-width: 1000px) {
-  .index_product .list .item .name {
-    padding: 0 10px;
-  }
-  .index_product .list .item .price {
-    font-size: 1rem;
-  }
-  .index_product .list .item .price .discount {
-    margin-right: 10px;
-  }
-}
-@media (max-width: 800px) {
+@media (max-width: 1200px) {
   .index_product {
     padding-bottom: 20px;
     margin-bottom: 40px;
@@ -460,7 +449,7 @@
     margin-bottom: 40px;
   }
 }
-@media (max-width: 800px) {
+@media (max-width: 1200px) {
   .index_brand {
     padding-bottom: 20px;
     margin-bottom: 40px;
@@ -498,7 +487,7 @@
   color: #fff;
   margin-bottom: 45px;
 }
-@media (max-width: 800px) {
+@media (max-width: 1200px) {
   .index_icon {
     flex-wrap: wrap;
   }

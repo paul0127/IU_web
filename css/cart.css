@@ -189,7 +189,7 @@
 .cart .info .list .item .table .operate {
   flex: 0 0 120px !important;
 }
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
   .cart .info {
     padding-top: 0;
   }
@@ -404,7 +404,7 @@
 .cart .info .bottom .right .btns button:hover {
   opacity: 0.8;
 }
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
   .cart .info .bottom {
     justify-content: flex-end;
   }
@@ -564,7 +564,7 @@
 .payment .info .table .operate {
   flex: 0 0 120px !important;
 }
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
   .payment .info {
     padding-top: 0;
   }
@@ -838,7 +838,7 @@
   span.circle::before {
   background-color: #333;
 }
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
   .payment .info .information {
     padding: 50px 20px;
   }
@@ -1087,7 +1087,7 @@
 .result .info .back a:hover {
   opacity: 0.8;
 }
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
   .result .info {
     padding-top: 0;
   }

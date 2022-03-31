@@ -440,18 +440,6 @@
   opacity: 0.8;
 }
 @media (max-width: 1200px) {
-  .product .info .info_top .img {
-    width: 500px;
-    flex: 0 0 500px;
-  }
-}
-@media (max-width: 1000px) {
-  .product .info .info_top .img {
-    width: 450px;
-    flex: 0 0 450px;
-  }
-}
-@media (max-width: 800px) {
   .product .info .info_top {
     flex-wrap: wrap;
   }

@@ -61,24 +61,6 @@
   font-size: 1.15rem;
 }
 @media (max-width: 1200px) {
-  .page.member .left_menu {
-    flex: 0 0 220px;
-    padding: 35px 15px 20px 15px;
-    margin-right: 20px;
-  }
-  .page.member .left_menu .level {
-    width: 70px;
-    height: 70px;
-    font-size: 0.85rem;
-  }
-  .page.member .left_menu ul li {
-    margin-bottom: 10px;
-  }
-  .page.member .left_menu ul li a {
-    font-size: 1rem;
-  }
-}
-@media (max-width: 1000px) {
   .page.member {
     flex-wrap: wrap;
   }
@@ -423,75 +405,6 @@
   cursor: pointer;
 }
 @media (max-width: 1200px) {
-  .page.member .right_frame .form {
-    padding: 30px;
-  }
-  .page.member .right_frame .form .list {
-    margin-bottom: 20px;
-  }
-  .page.member .right_frame .form .list .item {
-    margin-bottom: 20px;
-  }
-  .page.member .right_frame .form .list .item > label {
-    font-size: 1rem;
-  }
-  .page.member .right_frame .form .list .item > input[type='text'],
-  .page.member .right_frame .form .list .item > select,
-  .page.member .right_frame .form .list .item .birth_type input[type='text'],
-  .page.member .right_frame .form .list .item .birth_type select,
-  .page.member .right_frame .form .list .item .address_type .city,
-  .page.member .right_frame .form .list .item .address_type .block,
-  .page.member .right_frame .form .list .item .address_type .code,
-  .page.member .right_frame .form .list .item .address_type .addr,
-  .page.member .right_frame .form .list .item .tel_type input {
-    font-size: 1rem;
-    padding: 7px 10px;
-  }
-  .page.member .right_frame .form .list .item .address_type .city {
-    margin-right: 0;
-  }
-  .page.member .right_frame .form .list .item .address_type .code {
-    margin-left: 0;
-  }
-  .page.member .right_frame .form .list .item .birth_type input[type='text'] {
-    flex: 0 0 70px;
-  }
-  .page.member .right_frame .form .list .item .birth_type select {
-    flex: 0 0 60px;
-  }
-  .page.member .right_frame .form .list .item .birth_type span {
-    font-size: 1rem;
-    margin: 0 5px;
-  }
-  .page.member .right_frame .form .list .item .radio_type label {
-    font-size: 1rem;
-  }
-  .page.member .right_frame .form .list .item .radio_type label span.circle {
-    width: 15px;
-    height: 15px;
-  }
-  .page.member
-    .right_frame
-    .form
-    .list
-    .item
-    .radio_type
-    label
-    span.circle::before {
-    width: 7.5px;
-    height: 7.5px;
-  }
-  .page.member .right_frame .form .list .item .alert_text {
-    font-size: 1rem;
-    margin-top: 10px;
-  }
-  .page.member .right_frame .form .send a {
-    width: 200px;
-    font-size: 1.25rem;
-    padding: 8px 0;
-  }
-}
-@media (max-width: 1000px) {
   .page.member .right_frame .m_title {
     margin-bottom: 20px;
   }
@@ -791,14 +704,6 @@
 }
 @media (max-width: 1200px) {
   .page.member .right_frame .table {
-    font-size: 0.8rem;
-  }
-  .page.member .right_frame .table .body .tr_group.active .content {
-    font-size: 1rem;
-  }
-}
-@media (max-width: 1000px) {
-  .page.member .right_frame .table {
     font-size: 0.75rem;
   }
   .page.member .right_frame .table .shoptype {
@@ -1003,7 +908,7 @@
 .page.member .right_frame .form .pro_list .item .operate .delete:hover {
   opacity: 0.8;
 }
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
   .page.member .right_frame .form .pro_list .item .image {
     width: 80px;
     margin-right: 10px;
