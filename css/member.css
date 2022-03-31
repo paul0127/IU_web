@@ -60,6 +60,24 @@
   padding: 5px 0;
   font-size: 1.15rem;
 }
+@media (max-width: 1400px) {
+  .page.member .left_menu {
+    flex: 0 0 210px;
+    margin-right: 10px;
+  }
+  .page.member .left_menu .level {
+    width: 80px;
+    height: 80px;
+    font-size: 1rem;
+  }
+  .page.member .left_menu ul li {
+    padding-bottom: 3px;
+    margin-bottom: 10px;
+  }
+  .page.member .left_menu ul li a {
+    font-size: 1rem;
+  }
+}
 @media (max-width: 1200px) {
   .page.member {
     flex-wrap: wrap;
@@ -404,6 +422,32 @@
   text-decoration: none;
   cursor: pointer;
 }
+@media (max-width: 1400px) {
+  .page.member .right_frame .form {
+    padding: 30px;
+  }
+  .page.member .right_frame .form .list .item > label {
+    font-size: 1.15rem;
+    margin-bottom: 10px;
+  }
+  .page.member .right_frame .form .list .item > input[type='text'],
+  .page.member .right_frame .form .list .item > input[type='password'],
+  .page.member .right_frame .form .list .item .birth_type input[type='text'],
+  .page.member .right_frame .form .list .item .birth_type select,
+  .page.member .right_frame .form .list .item .birth_type span,
+  .page.member .right_frame .form .list .item .radio_type label,
+  .page.member .right_frame .form .list .item .alert_text {
+    font-size: 1.15rem;
+  }
+  .page.member .right_frame .form .list .item .birth_type input[type='text'] {
+    flex: 0 0 70px;
+    padding: 10px;
+  }
+  .page.member .right_frame .form .list .item .birth_type select {
+    flex: 0 0 50px;
+    padding: 10px;
+  }
+}
 @media (max-width: 1200px) {
   .page.member .right_frame .m_title {
     margin-bottom: 20px;
@@ -520,7 +564,7 @@
   flex: 0 0 70px !important;
 }
 .page.member .right_frame .table .shoptype {
-  flex: 0 0 110px !important;
+  flex: 0 0 100px !important;
 }
 .page.member .right_frame .table .payment {
   flex: 0 0 105px !important;

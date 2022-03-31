@@ -189,6 +189,23 @@
 .cart .info .list .item .table .operate {
   flex: 0 0 120px !important;
 }
+@media (max-width: 1400px) {
+  .cart .info .list{
+    padding: 30px;
+  }
+  .cart .info .list .item .table .body .tr .td{
+    font-size: 1.25rem;
+  }
+  .cart .info .list .item .table .spec{
+    flex: 0 0 125px !important;
+  }
+  .cart .info .list .item .table .price{
+    flex: 0 0 125px !important;
+  }
+  .cart .info .list .item .table .image{
+    flex: 0 0 100px !important;
+  }
+}
 @media (max-width: 1200px) {
   .cart .info {
     padding-top: 0;
@@ -403,6 +420,17 @@
 }
 .cart .info .bottom .right .btns button:hover {
   opacity: 0.8;
+}
+@media (max-width: 1400px) {
+  .cart .info .bottom .discount{
+    font-size: 1.25rem;
+  }
+  .cart .info .bottom .discount .text input{
+    width: 200px;
+  }
+  .cart .info .bottom .right .total{
+    font-size: 1.25rem;
+  }
 }
 @media (max-width: 1200px) {
   .cart .info .bottom {
