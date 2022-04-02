@@ -296,7 +296,7 @@ header ul.nav > li > ul.sub_menu > li:last-child {
     margin-right: 20px;
   }
   header ul.nav > li > ul.sub_menu {
-    font-size: 1.25rem;
+    font-size: 1.15rem;
   }
   header .nav_top ul.toolbar {
     font-size: 1.75rem;
@@ -856,6 +856,7 @@ ul.pager li:hover {
 }
 .pro_pop .info .text .options .opt {
   margin-right: 5px;
+  margin-bottom: 5px;
 }
 .pro_pop .info .text .options .opt input[type='radio'] {
   display: none;
